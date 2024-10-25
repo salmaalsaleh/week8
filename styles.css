@@ -10,16 +10,28 @@ div{
     text-align: center;
 }
 #container{
-    width: 700px;
-    height: 400px;
+    width: 900px;
+    height: 600px;
     border: solid; 
     border-color: black;
     display: flex;
     flex-direction: row;
     background-color: blue;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+
+    /*justify-content: space-between;*/
+     /*justify-content: flex-start;*/
+      /*justify-content: space-between;*/
+       /*justify-content: space-around;*/ 
+        /*justify-content: center;*/
+         /*justify-content: space-evenly;*/
+          /*flex-wrap: wrap;*/
 }
 body{
+    
     background-size: cover;
     background-attachment: fixed;
     background-image: url()
@@ -44,6 +56,7 @@ body{
     position: absolute;
     top: 100px;
     left: 30px;
+    flex-shrink: 2;
 }
 /* use box4 for header */
 #box4{
@@ -51,4 +64,22 @@ body{
     bottom: 0px;
     width: 100vw;
     left: 60px;
+}
+#box5{
+    flex-shrink: 4;
+    transition: all;
+    transition-duration: 2s;
+    transition-delay: 1s;
+}
+#box5:hover(
+    background-color: blue;
+    border: solid;
+    background-size: cover;
+    backgroud-image: url()
+    transfrom: skew;
+)
+@media (width: 600px){
+    #box3{
+        background-color: brown;
+    }
 }
